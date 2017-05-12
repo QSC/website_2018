@@ -1,0 +1,161 @@
+/* your styles go here */
+.jumbo
+ {
+  background-image: url('../img/spacebg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height:100vh;
+}
+
+@media (max-width: 991px) {
+  .jumbo
+   {
+    padding: 20px;
+  }
+}
+.jumbo
+ .container {
+  position: relative;
+  z-index: 2;
+}
+.jumbo .jumboTitle h1{
+  color:white;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.jumbo .jumboTitle img{
+  color:white;
+  padding-top: 0px;
+}
+.jumbo
+ p.social {
+  text-align: center;
+  margin-top: 20px;
+}
+.jumbo
+ p.social a {
+  margin: 0 10px 0 0;
+  color: #fff;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  line-height: 26px;
+  font-size: 15px;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  vertical-align: bottom;
+}
+.jumbo
+ p.social a i {
+  vertical-align: bottom;
+  line-height: 26px;
+}
+.jumbo
+ p.social a.facebook {
+  background-color: #4460ae;
+}
+.jumbo
+ p.social a.gplus {
+  background-color: #c21f25;
+}
+.jumbo
+ p.social a.twitter {
+  background-color: #3cf;
+}
+.jumbo
+ p.social a.instagram {
+  background-color: #cd4378;
+}
+.jumbo
+ p.social a.email {
+  background-color: #4a7f45;
+}
+@media (max-width: 991px) {
+  .jumbo
+   p.social {
+    text-align: center;
+  }
+}
+.jumbo
+ .cursive {
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-size: 60px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 0.13em;
+}
+@media (max-width: 991px) {
+  .jumbo
+   .cursive {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .jumbo
+   .cursive {
+    font-size: 30px;
+  }
+}
+.jumbo
+ .sub {
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+}
+@media (max-width: 991px) {
+  .jumbo
+   .sub {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .jumbo
+   .sub {
+    font-size: 20px;
+  }
+}
+.jumbo
+ .countdown {
+  margin-top: 0px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  margin-bottom: 50px;
+}
+.jumbo
+ .countdown-label {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.jumbo
+ .countdown-number {
+  font-size: 124px;
+  line-height: 1;
+  font-weight: 200;
+}
+@media (max-width: 991px) {
+  .jumbo
+   .countdown-number {
+    font-size: 30px;
+  }
+}
+
+.jumbo
+ .transparent {
+  background: rgba(255, 255, 255, 0.3);
+  border: solid 1px #fff;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.jumbo
+ .footer {
+  color: #eee;
+}

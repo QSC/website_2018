@@ -75,7 +75,7 @@ function utils() {
 
     /* tooltips */
 
-    $('[data-toggle="tooltip"]').tooltip();
+    /*$('[data-toggle="tooltip"]').tooltip();/*
 
     /* click on the box activates the radio */
 

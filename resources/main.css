@@ -1,0 +1,128 @@
+body{
+	font-family: 'Roboto', sans-serif;
+
+}
+.jumbotron {
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-bottom: 0px;
+	background-image: url('../img/spacebg.jpg');
+}
+#navbar{
+	font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.navbar-fixed-top{
+ 	width:100%;
+	background-color: linen;
+	background: rgba(0, 0, 0, 0.99);
+}
+.fixed-links{
+	padding-right: 16px;
+}
+.navbar{
+	margin-bottom: 0px;
+	background-color: linen;
+	background: rgba(0, 0, 0, 0.99);
+	border-color: black;
+	border-width: 2px;
+	color:white;
+}
+.navbar-header{
+	color:white;
+}
+.navbar-custom .navbar-header a{
+	color:white;
+}
+.navbar-custom .navbar-header a:hover,
+.navbar-custom .navbar-header a:active,
+.navbar-custom .navbar-header a:focus
+{
+	color:#18BC9C;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus,
+{
+	background-color: blue;
+}
+.navbar-custom .navbar-nav li a
+{
+	color:white;
+}
+.navbar-custom .navbar-nav li a:hover,
+.navbar-custom .navbar-nav li a:active,
+.navbar-custom .navbar-nav li a:focus
+{
+	color:#18BC9C;
+}
+
+#portfolio{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: black;
+	background-color: linen;
+	height:450px;
+}
+
+.port_height{
+	height: 375px;
+}
+
+#about{
+	font-family: 'Open Sans Condensed', sans-serif;
+	height: 400px;
+	color:black;
+	background-color: linen;
+}
+#delegates{
+	color:white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	height: 400px;
+	background-image: url('../img/spacebg.jpg');
+}
+#sponsorship{
+	font-family: 'Open Sans Condensed', sans-serif;
+	height: 400px;
+	color:black;
+	background-color:linen;	
+}
+#delegates{
+	color:white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	height: 400px;
+	background-image: url('../img/spacebg.jpg');
+}
+#speakers{
+	color:white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	height: 400px;
+	background-image: url('../img/spacebg.jpg');
+	background-position: center bottom;
+}
+#team{
+	font-family: 'Open Sans Condensed', sans-serif;
+	height: 400px;
+	color:black;
+	background-color: linen;
+}
+.affix {
+      top: 0;
+      width: 100%;
+  }
+
+ .affix + .container-fluid {
+      padding-top: 20px;
+ }
+
+/*Custom Mobile Rules*/
+@media (max-width: 768px) {
+	#portfolio{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: black;
+	background-color: linen;
+	height:525px;
+	}
+
+	.port_height{
+		height: 450px;
+	}
+}
+
