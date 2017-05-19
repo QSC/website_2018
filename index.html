@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Queen's Space Conference</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- Bootstrap Core CSS -->
 <link href="resources/bootstrap.min.css" rel="stylesheet">
 <!--Font Awesome css-->
@@ -19,7 +20,7 @@
 .boxes{
   background-color: linen;
 }
-.navbar-fixed{
+.navbar-fixed-top{
     top: 0;
     z-index: 100;
     position: fixed;
@@ -46,6 +47,7 @@
         </div>
         <!-- countdown-->
         <div id="countdown" class="countdown">
+          <div class = "container-fluid">
           <div class="row">
             <div class="countdown-item col-sm-3 col-xs-6">
               <div id="countdown-days" class="countdown-number">&nbsp;</div>
@@ -64,18 +66,16 @@
               <div class="countdown-label">seconds</div>
             </div>
           </div>
+          </div>
         </div>
       </div>
   </div>
 </div>
 
 <!-- Navigation -->
-<div id = "nav_bar" class = "navbar-custom">
-<nav class = "row navbar navbar-default">
-<div class = "container-fluid">
-  
+<nav class = "navbar navbar-default">
   <div class = "navbar-header">
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-target" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -84,7 +84,7 @@
   <a class = "navbar-brand XX" style = "font-family: 'Open Sans Condensed', sans-serif;" href = "#jumbo"><i>QSC</i></a>
   </div>
   
-   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+   <div class="collapse navbar-collapse" id="collapse-target">
     <ul class = "nav navbar-nav navbar-right" id = "linkList">
       <li ><a href="#about" class = "XX">QSC 2018</a></li>
       <li><a href="#delegates" class ="XX">Delegates</a></li>
@@ -93,15 +93,12 @@
       <li><a href="#team" class = "XX">The Team</a></li>
     </ul>
    </div>
-</div>
-
 
 </nav>
-</div>
 
 <!-- About Section -->
     <section id="about" class = "bump">
-      <div class = "container">
+      <div class = "container-fluid">
             <div class="porfolio_title row">
                 <div class="col-lg-12 text-center">
                     <h1>Queen's Space Conference 2018</h1>
@@ -111,7 +108,7 @@
     </section>
     
     <section id = "delegates">
-    <div class = "containerr">
+    <div class = "container-fluid">
       <div class="header_title row">
                 <div class="col-lg-12 text-center">
                     <h1>Delegates</h1>
@@ -122,7 +119,7 @@
     </section>
 
     <section id = "sponsorship">
-    <div class = "container">
+    <div class = "container-fluid">
       <div class="services_title row">
                 <div class="col-lg-12 text-center">
                     <h1>Sponsors</h1>
@@ -133,7 +130,7 @@
     </section>
 
     <section id = "speakers">
-    <div class = "container">
+    <div class = "container-fluid">
       <div class="contact_title row">
                 <div class="col-lg-12 text-center">
                     <h1>Speakers</h1>
@@ -144,7 +141,7 @@
     </section>
 
     <section id = "team">
-    <div class = "container">
+    <div class = "container-fluid">
       <div class="contact_title row">
                 <div class="col-lg-12 text-center">
                     <h1>Our Team</h1>
@@ -178,13 +175,13 @@ $(document).ready(function() {
       //.log to determine when you want the 
       var d = $('#jumbo');
     if ($(window).scrollTop() > d.prop("scrollHeight") ) {
-      $('#nav_bar').addClass('navbar-fixed-top');
+      $('.navbar').addClass('navbar-fixed-top');
       $('#linkList').addClass('fixed-links');
-      $('body').css('margin-top','50px');
-      console.log("Passed jumbo");
+      $('body').css('margin-top','53.8px');
+     
     }
     if ($(window).scrollTop() < d.prop("scrollHeight")) {
-      $('#nav_bar').removeClass('navbar-fixed-top');
+      $('.navbar').removeClass('navbar-fixed-top');
       $('#linkList').removeClass('fixed-links');
       $('body').css('margin-top','0px');
     }

@@ -20,37 +20,37 @@ body{
 	padding-right: 16px;
 }
 .navbar{
+	/*-webkit-backface-visibility: hidden;*/
 	margin-bottom: 0px;
-	background-color: linen;
-	background: rgba(0, 0, 0, 0.99);
-	border-color: black;
-	border-width: 2px;
+	background-color: black;
+	border-radius: 0px;
+	border:none;
 	color:white;
 }
 .navbar-header{
 	color:white;
 }
-.navbar-custom .navbar-header a{
+.navbar .navbar-header a{
 	color:white;
 }
-.navbar-custom .navbar-header a:hover,
-.navbar-custom .navbar-header a:active,
-.navbar-custom .navbar-header a:focus
+.navbar .navbar-header a:hover,
+.navbar .navbar-header a:active,
+.navbar .navbar-header a:focus
 {
 	color:#18BC9C;
 }
-.navbar-custom .navbar-toggle:hover,
-.navbar-custom .navbar-toggle:focus,
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus,
 {
 	background-color: blue;
 }
-.navbar-custom .navbar-nav li a
+.navbar .navbar-nav li a
 {
 	color:white;
 }
-.navbar-custom .navbar-nav li a:hover,
-.navbar-custom .navbar-nav li a:active,
-.navbar-custom .navbar-nav li a:focus
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a:active,
+.navbar .navbar-nav li a:focus
 {
 	color:#18BC9C;
 }
