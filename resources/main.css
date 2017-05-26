@@ -2,6 +2,12 @@ body{
 	font-family: 'Roboto', sans-serif;
 
 }
+body h1,h2,h3{
+font-family: 'Orbitron', sans-serif;
+}
+body p{
+	font-family: 'Oxygen', sans-serif;
+}
 .jumbotron {
 	font-family: 'Open Sans Condensed', sans-serif;
 	margin-bottom: 0px;
@@ -68,16 +74,10 @@ body{
 
 #about{
 	font-family: 'Open Sans Condensed', sans-serif;
-	height: 400px;
 	color:black;
 	background-color: linen;
 }
-#delegates{
-	color:white;
-	font-family: 'Open Sans Condensed', sans-serif;
-	height: 400px;
-	background-image: url('../img/spacebg.jpg');
-}
+
 #sponsorship{
 	font-family: 'Open Sans Condensed', sans-serif;
 	height: 400px;
@@ -86,8 +86,6 @@ body{
 }
 #delegates{
 	color:white;
-	font-family: 'Open Sans Condensed', sans-serif;
-	height: 400px;
 	background-image: url('../img/spacebg.jpg');
 }
 #speakers{

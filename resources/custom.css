@@ -7,6 +7,10 @@
   background-size: cover;
   height:100vh;
 }
+.jumbo-wrap{
+    white-space: nowrap;
+    overflow: hidden;
+}
 
 @media (max-width: 991px) {
   .jumbo
@@ -24,9 +28,27 @@
   margin-top: 10px;
   margin-bottom: 0px;
 }
-.jumbo .jumboTitle img{
-  color:white;
-  padding-top: 0px;
+.jumbo  img{
+  display: block;
+  margin: auto;
+  position: absolute;
+  left:0;
+  right:0;
+  width:400px;
+  height:400px;
+  top:120px;
+}
+@media (max-width: 400px) {
+   .jumbo img{
+    width:300px;
+    height:300px;
+  }
+}
+@media (max-width: 350px) {
+   .jumbo img{
+    width:250px;
+    height:250px;
+  }
 }
 .jumbo
  p.social {
@@ -84,7 +106,7 @@
  .cursive {
   margin-top: 50px;
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 50px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   text-align: center;
   margin-bottom: 40px;
@@ -123,28 +145,42 @@
 }
 .jumbo
  .countdown {
-  margin-top: 0px;
+  position:relative;
+  bottom:0px;
   text-align: center;
   color: #fff;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  margin-bottom: 50px;
+  
+}
+.jumbo .countdown-wrapper{
+  display:block;
+  position: absolute;
+  width: 100%;
+  left:0;
+  right:0;
+  bottom: 80px;
 }
 .jumbo
  .countdown-label {
   margin-top: 10px;
   font-size: 24px;
   font-weight: 300;
+  font-family: 'Orbitron', sans-serif;
+
 }
 .jumbo
  .countdown-number {
-  font-size: 124px;
+  font-size: 80px;
   line-height: 1;
   font-weight: 200;
+  font-family: 'Poiret One', sans-serif;
+
 }
 @media (max-width: 991px) {
   .jumbo
    .countdown-number {
     font-size: 30px;
+    
   }
 }
 
