@@ -80,7 +80,7 @@ body p{
 
 #sponsorship{
 	font-family: 'Open Sans Condensed', sans-serif;
-	height: 400px;
+	height: 200px;
 	color:black;
 	background-color:linen;	
 }
@@ -88,16 +88,21 @@ body p{
 	color:white;
 	background-image: url('../img/spacebg.jpg');
 }
+#footer{
+	color:white;
+	background-image: url('../img/spacebg.jpg');
+
+}
+
 #speakers{
 	color:white;
 	font-family: 'Open Sans Condensed', sans-serif;
-	height: 400px;
+	height: 200px;
 	background-image: url('../img/spacebg.jpg');
 	background-position: center bottom;
 }
 #team{
 	font-family: 'Open Sans Condensed', sans-serif;
-	height: 400px;
 	color:black;
 	background-color: linen;
 }
