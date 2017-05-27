@@ -67,19 +67,26 @@
   #delegates p{
     font-size:20px;
   }
-
-  @media (min-width: 700px) {
-    .paragraph{
-     margin-left: 50px;
-     margin-right: 50px;
-    }
-  }
-
   #team img{
     width:150px;
     height: 150px;
     margin-top: 15px;
   }
+  @media (max-width: 700px) {
+    .paragraph{
+     margin-left: 50px;
+     margin-right: 50px;
+
+    }
+    #team img{
+    width:130px;
+    height: 130px;
+    margin-top: 15px;
+  }
+  }
+
+  
+
   #team .exec{
     height:250px;
   }
@@ -87,12 +94,55 @@
     padding-left: 8px;
     padding-right: 8px;
   }
+  .map-overlay{
 
+   background:transparent; 
+   position:relative; 
+   width:640px;
+   height:335px; /* your iframe height */
+   top:335px;  /* your iframe height */
+   margin-top:-335px;  /* your iframe height */
+
+  }
+  hr.style13 {
+
+  height: 20px;
+  border: 0;
+  box-shadow: 0 30px 30px -30px purple inset;
+  padding: 0;
+  margin:0;
+  }
+  hr.style13g {
+
+  height: 20px;
+  border: 0;
+  box-shadow: 0 30px 30px -30px green inset;
+  padding: 0;
+  margin:0;
+  }
+   hr.style13r {
+
+  height: 20px;
+  border: 0;
+  box-shadow: 0 30px 30px -30px red inset;
+  padding: 0;
+  margin:0;
+  }
+  .map-container iframe{
+  width: 100%;
+  display: block;
+  pointer-events: none;
+  position: relative; /* IE needs a position other than static */
+}
+.map-container iframe.clicked{
+  pointer-events: auto;
+}
 </style>
 </head>
 
 <body>
 <!--Jumbotron Header -->
+
 <div class = "jumbo-wrap">
 <div class = "jumbo jumbotron jumbotron-fluid" id = "jumbo" style = "padding:0;">
   <div class = "overlay" style = " height:100%;">
@@ -142,6 +192,7 @@
   </div>
 </div>
 </div>
+</div>
 
 <!-- Navigation -->
 <nav class = "navbar navbar-default">
@@ -168,6 +219,7 @@
 </nav>
 
 <!-- About Section -->
+<hr class = "style13" style = "background-color: linen;">
   <section id="about" class = "bump">
       <div class = "container-fluid" style = "padding: 0;padding-bottom: 20px;">
             
@@ -300,14 +352,14 @@
                 <h3>Applications Coming Soon!</h3>
                 </div>
     </section>
-
+    <hr class = "style13g" style = "background-color: linen;">
     <section id = "sponsorship">
     <div class = "container-fluid">
       <div class="services_title row">
                 <div class="col-lg-12 text-center">
                     <h1>Sponsors</h1>
                     <!--<hr class="star-primary">-->
-                    <h3>Sponsors Coming Soon!</h3>
+                    <h3>Coming Soon!</h3>
                 </div>
             </div>
     </div>
@@ -319,11 +371,12 @@
                 <div class="col-lg-12 text-center">
                     <h1>Speakers</h1>
                     <!--<hr class="star-primary">-->
-                    <h3>Speakers Coming Soon!</h3>
+                    <h3>Coming Soon!</h3>
                 </div>
             </div>
     </div>
     </section>
+    <hr class = "style13r" style = "background-color: linen;">
 
     <section id = "team">
     <div class = "container-fluid">
@@ -333,13 +386,13 @@
               </div>
           </div>
             
-                <div class = "exec col-sm-6 text-center">
+                <div class = "exec col-xs-6 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>Rachel Steinhart <br> Co-Chair</p>
                       <a href = "mailto:r.steinhart@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
                       <a href = "https://www.linkedin.com/in/rachel-steinhart-9207a1131/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
                 </div>
-                <div class = "exec col-sm-6 text-center">
+                <div class = "exec col-xs-6 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>Fiona Burns <br> Co-Chair</p>
                       <a href = "mailto:f.burns@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
@@ -347,39 +400,39 @@
                 </div>
             
            
-                 <div class = "exec col-sm-6 col-md-4 text-center">
+                 <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>Cory Crowley <br> IT Coordinator</p>
                       <a href = "mailto:c.crowley@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
                       <a href = "https://www.linkedin.com/in/crowleycoryz/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
                      
                 </div>
-                <div class = "exec col-sm-6 col-md-4 text-center">
+                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>Duncan Cameron-Steinke <br> Logistics Coordinator</p>
                       <a href = "mailto:m.skarsgard@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
                 </div>
                  
-                 <div class = "exec col-sm-6 col-md-4 text-center">
+                 <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
                       <img src = "img/team/placeholder.png">
                       <p> TBD <br> Marketing Director</p>
                       
                 </div>
                
-                <div class = "exec col-sm-6 col-md-4 text-center" >
+                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center" >
                       <img src = "img/team/placeholder.png">
                       <p>Colin MacLeod <br> Speakers Director</p>
                       <a href = "mailto:c.macleod@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
                       <a href = "https://www.linkedin.com/in/colinlmacleod1/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
                       
                 </div>
-                <div class = "exec col-sm-6 col-md-4 text-center" >
+                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center" >
                       <img src = "img/team/placeholder.png">
                       <p>Sam Roper <br> Speakers Coordinator</p>
                       <a href = "mailto:s.roper@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
                        <a href = "https://www.linkedin.com/in/sam-roper-a76016134/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
                 </div>
-                <div class = "exec col-sm-6 col-md-4 text-center">
+                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>Becca Bonham-Carter <br> Speakers Coordinator</p>
                       <a href = "mailto:r.bonham-carter@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
@@ -388,7 +441,7 @@
                 </div>
           
                 
-                <div class = "exec col-sm-6 col-md-4 text-center">
+                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>Aaron Rosenstein <br> Sponsorship Director</p>
                       <a href = "mailto:a.rosenstein@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
@@ -396,47 +449,47 @@
 
                      
                 </div>
-                <div class = "exec col-sm-6 col-md-4 text-center">
+                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>Jack Ellis <br> Sponsorship Coordinator</p>
                       <a href = "mailto:j.ellis@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
 
                       <a href = "https://www.linkedin.com/in/jack-ellis-5a3018134/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
                 </div>
-                <div class = "exec col-sm-6 col-md-4 text-center">
+                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>Matthew Skarsgard <br> Sponsorship Coordinator</p>
                       <a href = "mailto:m.skarsgard@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
                       <a href = "https://www.linkedin.com/in/mtskarsgard/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
                 </div>
-                <div class = "exec col-sm-6 col-md-4 text-center">
+                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>TBD <br> Publications &amp; Media Coordinator</p>
                       
                 </div>
                  
-                <div class = "exec col-sm-6 col-md-4 text-center">
+                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>TBD <br> Finance Coordinator</p>
                       
                 </div>
-                <div class = "exec col-sm-6 col-md-4 text-center">
+                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>TBD <br> Events Coordinator</p>
                       
                 </div>
             
-                <div class = "exec col-sm-6 col-md-4 text-center">
+                <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>TBD <br> Internal Delegates</p>
                       
                 </div>
-                <div class = "exec col-sm-6 col-md-4 text-center">
+                <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>TBD <br> External Delegates</p>
                       
                 </div>
-                 <div class = "exec col-sm-6 col-md-4 text-center">
+                 <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>TBD <br> Frosh Representative</p>
                      
@@ -448,6 +501,19 @@
             
       </div>
     </section>
+
+    <!-- Map -->
+<div class = "map-container" style = "margin-bottom: -20px; padding-bottom: 0px; background-image: url('img/spacebg.jpg');">
+  <!--<div class="map-overlay" onClick="style.pointerEvents='none'"></div>-->
+    <section id="contact" class="map">
+        <iframe width="100%" height="40%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDt-2V1-v01m_NykXoY-3vfRQ1wc1yPWgM&q=Four+Points+Sheraton,Kingston+Ontario&zoom=16"></iframe>
+        <br />
+        <small>
+            <a href="https://www.google.com/maps/embed/v1/place?key=AIzaSyDt-2V1-v01m_NykXoY-3vfRQ1wc1yPWgM&q=Four+Points+Sheraton,Kingston+Ontario&zoom=17"></a>
+        </small>
+    </section>
+  </div>
+
     <!-- Footer -->
     <footer id = "footer">
         <div class="container">
@@ -533,7 +599,18 @@ $(document).ready(function(){
   });
 });
 </script>
+<!-- Google Maps Script-->
+<script>
+$('.bg').css('backgroundColor','#dedede');
+    $('.bg').fadeOut(5000); 
   
+    $('.map-container')
+  .click(function(){
+      $(this).find('iframe').addClass('clicked')})
+  .mouseleave(function(){
+      $(this).find('iframe').removeClass('clicked')});
+    </script>
+</script>
 
 <!-- Initialize Swiper -->
 <script>
