@@ -72,17 +72,22 @@
     height: 150px;
     margin-top: 15px;
   }
-  @media (max-width: 700px) {
-    .paragraph{
-     margin-left: 50px;
-     margin-right: 50px;
-
+  @media (min-width: 700px) {
+      .paragraph{
+       margin-left: 50px;
+       margin-right: 50px;
+      }
+      #team img{
+      width:130px;
+      height: 130px;
+      margin-top: 15px;
     }
-    #team img{
-    width:130px;
-    height: 130px;
-    margin-top: 15px;
   }
+  @media (max-width:370px){
+   #team img{
+      width:115px;
+      height: 115px;
+    }
   }
 
   
@@ -108,7 +113,7 @@
 
   height: 20px;
   border: 0;
-  box-shadow: 0 30px 30px -30px purple inset;
+  box-shadow: 0 30px 30px -32px purple inset;
   padding: 0;
   margin:0;
   }
@@ -116,7 +121,7 @@
 
   height: 20px;
   border: 0;
-  box-shadow: 0 30px 30px -30px green inset;
+  box-shadow: 0 30px 30px -32px green inset;
   padding: 0;
   margin:0;
   }
@@ -124,7 +129,7 @@
 
   height: 20px;
   border: 0;
-  box-shadow: 0 30px 30px -30px red inset;
+  box-shadow: 0 30px 30px -32px red inset;
   padding: 0;
   margin:0;
   }
@@ -137,6 +142,7 @@
 .map-container iframe.clicked{
   pointer-events: auto;
 }
+
 </style>
 </head>
 
@@ -407,31 +413,35 @@
                       <a href = "https://www.linkedin.com/in/crowleycoryz/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
                      
                 </div>
-                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
-                      <img src = "img/team/placeholder.png">
-                      <p>Duncan Cameron-Steinke <br> Logistics Coordinator</p>
-                      <a href = "mailto:m.skarsgard@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
-                </div>
-                 
-                 <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
-                      <img src = "img/team/placeholder.png">
-                      <p> TBD <br> Marketing Director</p>
-                      
-                </div>
-               
-                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center" >
+                <!-- to switch -->
+                 <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center" >
                       <img src = "img/team/placeholder.png">
                       <p>Colin MacLeod <br> Speakers Director</p>
                       <a href = "mailto:c.macleod@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
                       <a href = "https://www.linkedin.com/in/colinlmacleod1/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
                       
                 </div>
-                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center" >
+                 <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
                       <img src = "img/team/placeholder.png">
-                      <p>Sam Roper <br> Speakers Coordinator</p>
-                      <a href = "mailto:s.roper@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
-                       <a href = "https://www.linkedin.com/in/sam-roper-a76016134/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+                      <p> TBD <br> Marketing Director</p>
+                      
                 </div>
+                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
+                      <img src = "img/team/placeholder.png">
+                      <p>Aaron Rosenstein <br> Sponsorship Director</p>
+                      <a href = "mailto:a.rosenstein@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
+                      <a href = "https://www.linkedin.com/in/aaron-rosenstein-a20493110/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+
+                     
+                </div>
+               
+                
+                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
+                      <img src = "img/team/placeholder.png">
+                      <p>Duncan Cameron-Steinke <br> Logistics Coordinator</p>
+                      <a href = "mailto:m.skarsgard@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a>
+                </div>
+                
                 <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>Becca Bonham-Carter <br> Speakers Coordinator</p>
@@ -439,16 +449,14 @@
                       <a href = " https://www.linkedin.com/in/rebecca-bonham-carter-6977a3136/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
                      
                 </div>
-          
-                
-                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
+                <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center" >
                       <img src = "img/team/placeholder.png">
-                      <p>Aaron Rosenstein <br> Sponsorship Director</p>
-                      <a href = "mailto:a.rosenstein@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
-                      <a href = "https://www.linkedin.com/in/aaron-rosenstein-a20493110/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
-
-                     
+                      <p>Sam Roper <br> Speakers Coordinator</p>
+                      <a href = "mailto:s.roper@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
+                       <a href = "https://www.linkedin.com/in/sam-roper-a76016134/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
                 </div>
+                
+                
                 <div class = "exec col-xs-6 col-sm-4 col-md-3 text-center">
                       <img src = "img/team/placeholder.png">
                       <p>Jack Ellis <br> Sponsorship Coordinator</p>
