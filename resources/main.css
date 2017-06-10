@@ -43,7 +43,9 @@ body p{
 .navbar .navbar-header a:active,
 .navbar .navbar-header a:focus
 {
-	color:#18BC9C;
+	/*color:#18BC9C;*/
+	color:#3cf;
+
 }
 .navbar .navbar-toggle:hover,
 .navbar .navbar-toggle:focus,
@@ -58,7 +60,8 @@ body p{
 .navbar .navbar-nav li a:active,
 .navbar .navbar-nav li a:focus
 {
-	color:#18BC9C;
+	/*color:#18BC9C;*/
+	color:#3cf;
 }
 
 #portfolio{
@@ -96,7 +99,6 @@ body p{
 #speakers{
 	color:white;
 	font-family: 'Open Sans Condensed', sans-serif;
-	height: 200px;
 	background-image: url('../img/spacebg.jpg');
 	background-position: center bottom;
 }
@@ -114,7 +116,27 @@ body p{
       padding-top: 20px;
  }
 
+  #speakers .container-fluid .row .speaker{
+    height:150px;
+  }
+
+  #speakers a:hover,
+  #speakers a:active,
+  #speakers a:focus{
+  	/*color: #3cf;*/
+  	color:#204d74;
+  }
+    #speakers a{
+  	/*color: white;*/
+  	color: #3cf;
+  }
+
 /*Custom Mobile Rules*/
+ @media (max-width:600px){
+    #speakers .container-fluid .row .speaker{
+    height:200px;
+  }
+  }
 @media (max-width: 768px) {
 	#portfolio{
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -127,4 +149,6 @@ body p{
 		height: 450px;
 	}
 }
+
+
 
