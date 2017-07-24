@@ -20,7 +20,7 @@
 <!-- Link Swiper's CSS -->
 <link rel="stylesheet" href="resources/swiper.min.css">
 <!-- Favicon-->
-<link rel="shortcut icon" href="favicon.png">
+<link rel="shortcut icon" href="img/logo_transparent.png" type="image/x-icon" />
 
 <style>
 .boxes{
@@ -175,9 +175,16 @@
 }
 .spons-down{
   background-color:#3cf;
+
 }
 .spons-down:hover,.spons-down:focus,.spons-down:active{
 
+}
+.sched-down{
+  background-color:23527c;
+}
+.sched-down:hover,.sched-down:focus,.sched-down:active{
+ background-color:#3cf;
 }
 #dele_icon{
   display:block;
@@ -288,6 +295,7 @@
       <li><a href="#sponsorship" class = "XX">Sponsorship</a></li>
       <li><a href="#speakers" class = "XX">Speakers</a></li>
       <li><a href="#team" class = "XX">The Team</a></li>
+      <li><a href="#map" class = "XX">More Info</a></li>
     </ul>
    </div>
 
@@ -798,7 +806,7 @@
     </section>
 
     <!-- Map -->
-<div class = "map-container" style = "margin-bottom: -20px; padding-bottom: 0px; background-image: url('img/spacebg.jpg');">
+<div id = "map" class = "map-container" style = "margin-bottom: -20px; padding-bottom: 0px; background-image: url('img/spacebg.jpg');">
   <!--<div class="map-overlay" onClick="style.pointerEvents='none'"></div>-->
     <section id="contact" class="map">
         <iframe width="100%" height="40%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDt-2V1-v01m_NykXoY-3vfRQ1wc1yPWgM&q=Four+Points+Sheraton,Kingston+Ontario&zoom=16"></iframe>
@@ -824,12 +832,26 @@
         <a href="https://www.facebook.com/QSConference/" title="" class="fs facebook"><i class="fa fa-facebook fa-2x"></i></a>
         <a href="https://twitter.com/qsconference?lang=en" title="" class="fs twitter"><i class="fa fa-twitter fa-2x"></i></a>
         <a href="https://www.instagram.com/queensspace/" title="" class="fs instagram"><i class="fa fa-instagram fa-2x"></i></a></p>
+        <!--Download Button-->
+                    <div class = "text-center" style = "padding-top: 10px; padding-bottom: 0px;">
+                    <form method="get" action="resources/QSC-Schedule.pdf">
+                      <button class = "sched-down btn btn-primary" style = " border:none; -webkit-box-shadow: 2px 3px 5px rgba(4, 4, 4, 0.3);
+    -moz-box-shadow:    2px 3px 0px rgba(4, 4, 4, 0.3); width: 275px;">
+                        <span>
+                        <i class = "fa fa-arrow-circle-o-down fa-2x" style = "display:inline; padding-right: 8px; margin-top: 5px;"></i>
+                        <p style = "display:inline; text-align: center; font-size: 20px;">QSC 2017 Schedule</p>
+                        </span>
+                      </button>
+                      </form>
+                      </div>
+            <!--End Download Button-->
                     <hr class="small">
                     <p class="text-muted">Copyright &copy; QSC 2018 - Website design : <a href = "https://cormaccrowley.com">Cory Crowley</a></p>
                 </div>
             </div>
         </div>
         <a id="to-top" href="#jumbo" class="XX btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+        <br><br>
     </footer>
 
 <!-- jQuery -->
