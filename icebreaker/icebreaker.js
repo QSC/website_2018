@@ -178,6 +178,10 @@ function elt(name, attributes) {
 
 function nextSlide(){
 	var letterSelected = getSelection();
+	//Scroll story into view
+	var target = document.body.querySelector("#slideStory");
+	target.parentNode.scrollTop = target.offsetTop;
+	//Initiaite new slide
 	initSlide(letterSelected);
 }
 
@@ -293,5 +297,6 @@ function initSlide(letter){
 		inputs[i].value = currentObject.options[i].link;
 		//options[i].childNode.innerHTML = "weeo";
 	}
+
 	
 }

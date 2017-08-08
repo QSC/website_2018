@@ -123,6 +123,12 @@
 <script>
 //Start slidescript
 initSlide('start');
+
+function scrollTo() {
+	console.log("inside scroll to");
+            $('html, body').animate({ scrollTop: $('#storyHeader').offset().top }, 'slow');
+            return false;
+}
 </script>
 
 
