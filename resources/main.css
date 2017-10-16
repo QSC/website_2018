@@ -150,5 +150,13 @@ body p{
 	}
 }
 
+/*Sponsor Image Hover Shade*/
+.classWithShadow{
+   -moz-box-shadow: 5px 5px 6px #000; 
+   -webkit-box-shadow: 5px 5px 6px #000; 
+   box-shadow: 5px 5px 6px #000; 
+   background-color: rgba(51, 204, 255, 0.5);
+}
+
 
 
