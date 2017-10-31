@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <!--Custom CSS link -->
 <link href = "resources/main.css" rel = "stylesheet">
+<!-- Hover CSS link -->
+<link href = "resources/hover-min.css" rel = "stylesheet">
 <!--Custom CSS link Jumbotron-->
 <link href = "resources/custom.css" rel = "stylesheet">
 <!--Google Fonts-->
@@ -207,11 +209,14 @@
   transform: translateY(-50%);
 }
 .frameX{
-  height:175px;
+  height:100px;
 /*  margin-bottom: 10px;
   margin-top: 10px;*/
   border-radius: 2px;
 
+}
+.frameY{
+  height:175px;
 }
  @media (max-width:600px){
     .frameX{
@@ -499,6 +504,16 @@ End Taster Event -->
                 </div><!--End Container-fluid-->
                 <!-- Sponsor Images -->
                 <div class="col-lg-12 text-center">
+                    <h2 style = "font-size: 25px; margin-bottom: 0px;">Partners</h2>
+                </div>
+                    <div class = "container-fluid">
+                      <div class = "row" style = "margin-top: 22px; margin-bottom: 15px;">
+                    <a href = "http://www.breadandbutter.ca/"><div class = "col-xs-12 frameY hvr-grow"><img class = "img-responsive vertical-center" src = "img/sponsors/breadandbutter.png" style = "width: 300px;">
+                        </div></a>
+                      </div>
+                    </div>
+                
+                <div class="col-lg-12 text-center">
                     <h2 style = "font-size: 25px; margin-bottom: 0px;">Past Partners</h2>
                 </div>
                     <div class = "container-fluid">
@@ -507,40 +522,38 @@ End Taster Event -->
                         <div class = "col-xs-6 col-md-2">
                         <img class = "img-responsive vertical-center" src = "img/sponsors/csa.png"> 
                         </div>-->
-
-
                       <!--Past Sponsor-->
-                        <a onclick() href = "http://gomccoy.com/"><div class = "col-xs-6 col-md-3 frameX">
-                        <img class = "img-responsive vertical-center" src = "img/sponsors/mccoy.png"> 
+                        <a href = "http://gomccoy.com/"><div class = "col-xs-6 col-md-3 frameX hvr-grow">
+                        <img class = "img-responsive vertical-center pastSponsor" src = "img/sponsors/mccoy.png" style = "width:140px;"> 
                         </div></a>
                       <!--Past Sponsor-->
-                        <a href = "http://www.transformix.com/"><div class = "col-xs-6 col-md-3 frameX">
-                        <img class = "img-responsive vertical-center" src = "img/sponsors/transformix2.png">
+                        <a href = "http://www.transformix.com/"><div class = "col-xs-6 col-md-3 frameX hvr-grow">
+                        <img class = "img-responsive vertical-center" src = "img/sponsors/transformix2.png" style = "width:140px;">
                         </div></a>
                         <!--Past Sponsor-->
-                        <a href = "http://cpsx.uwo.ca/"><div class = "col-xs-6 col-md-3 frameX">
-                        <img class = "img-responsive vertical-center" src = "img/sponsors/cpsx.png">
+                        <a href = "http://cpsx.uwo.ca/"><div class = "col-xs-6 col-md-3 frameX hvr-grow">
+                        <img class = "img-responsive vertical-center" src = "img/sponsors/cpsx.png" style = "width:140px;">
                         </div></a>
                         <!--Past Sponsor-->
-                        <a href = "http://www.queensu.ca/"><div class = "col-xs-6 col-md-3 frameX">
-                        <img class = "img-responsive vertical-center" src = "img/sponsors/queens_logo.png">
+                        <a href = "http://www.queensu.ca/"><div class = "col-xs-6 col-md-3 frameX hvr-grow">
+                        <img class = "img-responsive vertical-center" src = "img/sponsors/queens_logo.png" style = "width:140px;">
+                        </div></a>
+                        
+                        <!--Past Sponsor-->
+                        <a href = "http://neptec.com/"><div class = "col-xs-6 col-md-4 frameX hvr-grow">
+                        <img class = "img-responsive vertical-center" src = "img/sponsors/neptec_logo.png" style = "width:140px;">
                         </div></a>
                         <!--Past Sponsor-->
-                        <a href = "http://neptec.com/"><div class = "col-xs-6 col-md-3 frameX">
-                        <img class = "img-responsive vertical-center" src = "img/sponsors/neptec_logo.png">
+                        <a href = "http://smokespoutinerie.com/"><div class = "col-xs-6 col-md-4 frameX hvr-grow">
+                        <img class = "img-responsive vertical-center" src = "img/sponsors/smokes_logo.png" style = "width:140px;">
                         </div></a>
                         <!--Past Sponsor-->
-                        <a href = "http://smokespoutinerie.com/"><div class = "col-xs-6 col-md-3 frameX">
-                        <img class = "img-responsive vertical-center" src = "img/sponsors/smokes_logo.png">
+                        <a href = "https://pitapit.ca/"><div class = "col-xs-6 col-md-4 frameX hvr-grow">
+                        <img class = "img-responsive vertical-center" src = "img/sponsors/pita_logo.png" style = "width:140px;">
                         </div></a>
-                        <!--Past Sponsor-->
-                        <a href = "https://pitapit.ca/"><div class = "col-xs-6 col-md-3 frameX">
-                        <img class = "img-responsive vertical-center" src = "img/sponsors/pita_logo.png">
-                        </div></a>
-                         <!--Past Sponsor-->
-                        <a href = "http://www.breadandbutter.ca/"><div class = "col-xs-6 col-md-3 frameX">
-                        <img class = "img-responsive vertical-center" src = "img/sponsors/breadandbutter.png">
-                        </div></a>
+                        
+                        
+                        
                          <!--Past Sponsor
                          <div class = "col-xs-4 col-md-3">
                         <img class = "img-responsive vertical-center" src = "img/sponsors/cfrc.jpg">
@@ -909,11 +922,11 @@ End Taster Event -->
 <script> 
 $(document).ready(function() {
 
-  //Sponsor hover script
+  /*Sponsor hover script
   $(".frameX").hover(function()
 { 
    $(this).toggleClass('classWithShadow');
-});
+});*/
   
   $(window).scroll(function () {
       //if you hard code, then use console
