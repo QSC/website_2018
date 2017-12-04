@@ -9,6 +9,24 @@ body p{
 	font-family: 'Oxygen', sans-serif;
 }
 
+/* Grow */
+.hvr-grow-custom {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow-custom:hover,
+.hvr-grow-custom:focus,
+.hvr-grow-custom:active {
+    transform: scale(1.05);
+}
+
 .current_speaker img{
 	width: 200px;
 	height: 200px;
@@ -111,6 +129,7 @@ background: -moz-linear-gradient(top, rgba(252,234,187,1) 0%, rgba(252,205,77,1)
 background: -webkit-linear-gradient(top, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 50%,rgba(251,223,147,1) 92%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(252,234,187,1) 0%,rgba(252,205,77,1) 50%,rgba(248,181,0,1) 50%,rgba(251,223,147,1) 92%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+border-top-left-radius: 10px; border-top-right-radius: 10px;
 }
 
 
@@ -300,6 +319,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
   margin-bottom: 40px;
   letter-spacing: 0.13em;
 }
+.ticket-scroller a{
+	color:white;
+}
+.ticket-scroller a:focus,
+.ticket-scroller a:hover{
+text-decoration: none;
+}
+
 .early-bird{
 	text-transform: uppercase;
   font-size: 25px;
@@ -451,6 +478,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
   #delegates p{
     font-size:20px;
   }
+
 
   #team img{
     width:150px;
