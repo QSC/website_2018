@@ -590,10 +590,10 @@ text-decoration: none;
 
 }
 .sched-down{
-  background-color:23527c;
+  background-color:#3cf;
 }
 .sched-down:hover,.sched-down:focus,.sched-down:active{
- background-color:#3cf;
+ background-color:#23527c;
 }
 #dele_icon{
   display:block;
