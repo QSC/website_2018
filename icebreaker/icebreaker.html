@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<title>Queen's Space Conference</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Bootstrap Core CSS -->
+<link href="../resources/bootstrap.min.css" rel="stylesheet">
+<!--Font Awesome-->
+<script src="https://use.fontawesome.com/92cc93e752.js"></script>
+<link href="https://use.fontawesome.com/92cc93e752.css" media="all" rel="stylesheet">
+<!--Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Arimo|Bungee+Outline|Gloria+Hallelujah|Khula|Orbitron|Oxygen|Poiret+One|Ubuntu" rel="stylesheet">
+<!--Font Awesome css-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- Favicon-->
+<link rel="shortcut icon" href="../img/logo_transparent.png" type="image/x-icon" />
+<!--Custom CSS link -->
+<link href = "icebreaker.css" rel = "stylesheet">
+<link href = "funkyradio.css" rel = "stylesheet">
+
+<!-- Icebreaker Game js script -->
+<script src = "icebreaker.js"></script>
+<style>
+/* .funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+	line-height: 1.5em;
+	text-indent: 0;
+} */
+</style>
+</head>
+<!-- Start Body -->
+<body>
+<!-- Start Game Overlay -->
+<div id="cover" >
+	<div class = "container-fluid cover-container">
+		<div class = "row heading-row">
+			<h1 class = "text-center">Unearth: The Exploration of Space!</h1>
+		</div>
+		<div class = "row content-row">
+			<p class = "text-center">
+				You are on an space exploration mission funded by the Queen's Space Conference... The brilliant QSC 2018 executive team has recently stumbled upon a giant leap forward in wormhole astrophysics - allowing human-made wormholes to become a space travel possibility.
+				<br>
+				<br>
+				Your mission is simple, don't come back until you find something interesting enough to convince the government - this was a good idea.
+				<br>
+				<br>
+				As you exit the wormhole, your ship locator shows you are near the center of the Andromeda galaxy.  In a solar system which NASA is conviced harbors life. Oh no!!! The ship warning lights flash red.  As captain, you instruct the crew to make course for the nearest planet.  With the last boost of your engines your ship loses orbit, and plumets towards the planet below.  The g-force is too strong, as you descend, you lose consciousness.
+				<br>
+				<br>
+				Choose your path well.  And good luck, wherever that path may lead.
+			</p>
+			<img src = "img/logo_transparent.png">
+		</div>
+		<div class = "row continue-row text-center">
+			<button class = "btn btn-primary" onclick = "killCover()"><h2>Ready?</h2></button>
+		</div>
+	</div>
+</div>
+<!-- Game Div wrapper -->
+<div id = "game">
+	<div class = "text-center topScoreContainer"><h3 id = "topScore"></h3></div>
+	<div id = "frameTemplate">
+		<!--Slide Heading-->
+		<div class = "col-xs-12" id = "heading">
+			<h1 id = "title" class = "text-center">Game</h1>
+		</div>
+		<!--Slide Content-->
+		<div id = "content">
+			<div class = "col-xs-12 col-sm-12 col-lg-4" id = "slideStory">
+				<h2 id = "storyHeader" class = "text-center">Update</h2>
+				<span><p id = "storyText" class = "text-center">Story Time</p></span>
+			</div>
+
+			<div class = "col-xs-12 col-sm-12 col-lg-4" id = "slideImage">
+				<img src = "">
+			</div>
+
+			<div class = "col-xs-12 col-sm-12 col-lg-4" id = "slideForm">
+				<h2 id = "formHeader" class = "text-center">Choose Your Path</h2>
+
+					<div class="funkyradio">
+				        <div class="funkyradio-success">
+				            <input value = "a" type="radio" name="radio" id="radio1"/>
+				            <label class = "container-fluid text-center label_txt" for="radio1">Option 1</label>
+				        </div>
+				        <div class="funkyradio-success">
+				            <input value = "b" type="radio" name="radio" id="radio2" />
+				            <label class = "container-fluid text-center label_txt" for="radio2">Option 2</label>
+				        </div>
+				        <div class="funkyradio-success">
+				            <input value = "c" type="radio" name="radio" id="radio3" />
+				            <label class = "container-fluid text-center label_txt" for="radio3">Option 3</label>
+				        </div>
+	   				</div>
+	   				<div class = "text-center"><p id = "input-help">Select option to continue.</p></div>
+	   				<!-- Continue Button -->
+	   				<div class = "text-center" id = "continue">
+						<button class = "btn btn-success" onclick = "nextSlide();">
+							<h3><span id = "txt">Continue</span>
+							<span>
+							<!-- <i id = "arrow" class="fa fa-arrow-right" aria-hidden="true"></i> -->
+							</span>
+							</h3>
+						</button>
+
+					</div>
+
+			</div>
+		</div>
+	</div><!--End  Frame-->
+
+	 <!--Return Home Button-->
+    <div id = "dwnbtn" class = "">
+    	<form method="get" action="../index.html">
+		      <button class = "btn btn-primary">
+		        <span>
+		        <i class = "fa fa-home fa-2x"></i>
+		        <p>Return Home</p>
+		        </span>
+		      </button>
+    	</form>
+    </div><!--End  Button-->
+
+</div><!--End  Game-->
+<!--Styling Scripts-->
+<!-- jQuery -->
+<script src="../resources/jquery.min.js"></script>
+<script>
+//Start slidescript
+initSlide('start');
+
+function scrollTo() {
+	console.log("inside scroll to");
+            $('html, body').animate({ scrollTop: $('#storyHeader').offset().top }, 'slow');
+            return false;
+}
+</script>
+
+
+</body>
+</html>

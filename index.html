@@ -1,0 +1,990 @@
+<html>
+<head>
+  <title>Queen's Space Conference</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--Font Awesome-->
+  <script src="https://use.fontawesome.com/92cc93e752.js"></script>
+  <link href="https://use.fontawesome.com/92cc93e752.css" media="all" rel="stylesheet">
+  <!-- Bootstrap Core CSS -->
+  <link href="resources/bootstrap.min.css" rel="stylesheet">
+  <!--Font Awesome css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!--Custom CSS link -->
+  <link href = "resources/main_v1.css" rel = "stylesheet">
+  <!-- Hover CSS link -->
+  <link href = "resources/hover-min.css" rel = "stylesheet">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Bungee+Outline|Gloria+Hallelujah|Khula|Orbitron|Oxygen|Poiret+One|Ubuntu" rel="stylesheet">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="resources/swiper.min.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/logo_transparent.png" type="image/x-icon" />
+
+  <style>
+  @media (max-width: 500x){
+
+  }
+  </style>
+</head>
+
+<body>
+<!--Jumbotron Header -->
+<div class = "jumbo-wrap">
+  <div class = "jumbo jumbotron jumbotron-fluid" id = "jumbo" style = "padding:0;">
+    <div class = "overlay" style = " height:100%;">
+      <div class="container" style = " height:100%;">
+        <p class="social">
+        <a href="https://www.facebook.com/QSConference/" title="" class="facebook hvr-grow"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/qsconference?lang=en" title="" class="twitter hvr-grow"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/queensspace/" title="" class="instagram hvr-grow"><i class="fa fa-instagram"></i></a></p>
+          <div class="jumboTitle row" style = "white-space: normal;">
+            <div class="col-sm-12">
+              <h1 class="cursive text-center">Queen's Space Conference</h1>
+            </div>
+            <div class="col-sm-12 ticket-scroller hvr-grow">
+              <!-- <a id = "schedule_link" href = "http://qsconference.com/icebreaker/icebreaker.html"><h5 class = " early-bird-hide early-bird text-center" style = "z-index:1000;">Space Game?!</h5></a> -->
+              <a id = "schedule_link" href = "resources/QSC-Case-Competition.pdf"><h5 class = " early-bird-hide early-bird text-center" style = "z-index:1000;">Case Competition</h5></a>
+            </div>
+          </div>
+        <!-- <img src = "img/logo_transparent.png" style = "z-index:-10;"> -->
+        <img src = "img/qsc_logo_c.png" style = "z-index:-10;">
+        <!--Download Button-->
+        <!-- <div id="sg_wrap" class = "space-game text-center" style = "padding-top: 10px; padding-bottom: 0px;">
+            <form action="http://qsconference.com/icebreaker/icebreaker.html">
+              <button type="submit" class = "hvr-grow sched-down btn btn-primary" style = " border:none; -webkit-box-shadow: 2px 3px 5px rgba(4, 4, 4, 0.3);
+    -moz-box-shadow:    2px 3px 0px rgba(4, 4, 4, 0.3); width: 275px;">
+                <span>
+                <i class = "fa fa-rocket fa-2x" style = " padding-right: 8px; margin-top: 5px;"></i>
+                <p style = " text-align: center; font-size: 20px;">Space Game</p>
+                </span>
+              </button>
+              </form>
+          </div> -->
+          <!-- <div id="sg_wrap" class="space-game col-sm-12 ticket-scroller hvr-grow">
+            <a id = "schedule_link" href = "http://qsconference.com/icebreaker/icebreaker.html"><h5 class = " early-bird text-center" style = "z-index:1000; font-size:40px;">Space Game?!</h5></a>
+          </div> -->
+        <!--End Download Button-->
+        <!-- countdown-->
+        <div class = "reveal-message text-center">
+          <h2>Unearth: The Exploration of Space!</h2>
+          <h3>January 26th - 28th, 2018</h3>
+        </div>
+        <!-- <div class = "countdown-wrapper">
+          <div id="countdown" class="countdown">
+            <div class = "container-fluid xyz">
+              <div class="row">
+                <div class="countdown-item col-sm-3 col-xs-6">
+                  <div id="countdown-days" class="countdown-number">&nbsp;</div>
+                  <div class="countdown-label">days</div>
+                </div>
+                <div class="countdown-item col-sm-3 col-xs-6">
+                  <div id="countdown-hours" class="countdown-number">&nbsp;</div>
+                  <div class="countdown-label">hours</div>
+                </div>
+                <div class="countdown-item col-sm-3 col-xs-6">
+                  <div id="countdown-minutes" class="countdown-number">&nbsp;</div>
+                  <div class="countdown-label">minutes</div>
+                </div>
+                <div class="countdown-item col-sm-3 col-xs-6">
+                  <div id="countdown-seconds" class="countdown-number">&nbsp;</div>
+                  <div class="countdown-label">seconds</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!--Down Arrow-->
+        <div class = "scrolldown hvr-grow" style = "height:50px;overflow: hidden;">
+            <p class = "text-center" style = "height:50px;"><a class = "XX" href = "#about"><i class="arrow fa fa-angle-down fa-5x" style = "color: rgba(255, 255, 255, .7);margin-top: -25px;" aria-hidden="true"></i></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> <!--End Jumbotron Header -->
+
+
+<!-- Navigation -->
+<nav class = "navbar navbar-default">
+  <div class = "navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-target" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    <a class = "navbar-brand XX" style = "font-family: 'Open Sans Condensed', sans-serif;" href = "#jumbo"><i>QSC</i></a>
+  </div>
+
+   <div class="collapse navbar-collapse" id="collapse-target">
+      <ul class = "nav navbar-nav navbar-right" id = "linkList">
+        <li ><a href="#about" class = "XX">QSC 2018</a></li>
+        <li><a href="#delegates" class ="XX">Delegates</a></li>
+        <li><a href="#sponsorship" class = "XX">Sponsorship</a></li>
+        <li><a href="#speakers" class = "XX">Speakers</a></li>
+        <li><a href="#team" class = "XX">The Team</a></li>
+        <li><a href="#map" class = "XX">More Info</a></li>
+        <li><a href="http://qsconference.com/resources/DelegateProgram.pdf">Program</a></li>
+        <li><a href="http://qsconference.com/icebreaker/icebreaker.html">Space Game</a></li>
+        <li><a href="http://qsconference.com/resources/QSC-Case-Competition.pdf">Case Competition</a></li>
+      </ul>
+   </div>
+</nav>
+
+
+
+<!-- About Section -->
+<hr id = "target_flare" class = "style13" style = "background-color: linen;">
+  <section id="about" class = "bump">
+      <div class = "container-fluid" style = "padding: 0;padding-bottom: 20px;">
+          <div class="col-lg-12 text-center">
+              <h1>Queen's Space Conference 2018</h1>
+          </div>
+          <div class = "desc col-sm-12 text-center">
+            <p><i>The Queen's Space Conference (QSC), held at Queen's University in Kingston, Ontario, is an annual, non-profit, student-run conference focused on connecting undergraduate students with space industry leaders.</i></p>
+          </div>
+          <!-- Apply & Rocket
+          <div class = "apply-wrapper text-center" style = "margin-top: 15px;">
+            <h3 id = "open-now">Early-bird applications open now!</h3>
+            <a href = "https://goo.gl/forms/PITZ1aCraAeAyG3u2"> <button type = "button" class = "btn btn-success" style = "border-radius: 10px;
+            width:200px;"><h2 style = "color:white;">Apply</h2></button></a>
+          </div>-->
+          <div class = "paragraph">
+            <div class = "container-fluid">
+            <div class = "row">
+
+
+                        <div class = "col-sm-12 col-md-6">
+                          <h3 class = "text-center">What Is QSC?</h3>
+                          <p>
+                            The conference is centered around a series of exciting talks, innovative workshops, and networking opportunities.
+                            We strive to bring together industry professionals in order to provide delegates the most informative, inspiring, and memorable conference possible. QSC is about sparking thought and idea-generation, raising awareness of the space industry, and piquing the interest in space for the future generation.
+                          </p>
+                        </div>
+
+
+                      <div class = "col-sm-12 col-md-6">
+                        <h3 class = "text-center">Unearth: The Exploration of Space!</h3>
+                        <p>
+                        What milestones have already been achieved in developing an understanding of space and in exploring the great unknown? Where will the future of space take us, and what's in store for the next generation of the Canadian space industry? Join us at QSC 2018 to Unearth the answers! This year, QSC will take place January 26th - 28th at the Four Points by Sheraton Hotel. This promises to be a stellar experience, and the best space conference yet!
+                        </p>
+                      </div>
+
+
+              </div>
+            </div>
+         </div>
+
+         <!--Download Button-->
+         <div class = "text-center" style = "padding-top: 10px; padding-bottom: 0px;">
+         <form method="get" action="resources/DelegateProgram.pdf">
+           <button class = "sched-down btn btn-primary" style = " border:none; -webkit-box-shadow: 2px 3px 5px rgba(4, 4, 4, 0.3);
+ -moz-box-shadow:    2px 3px 0px rgba(4, 4, 4, 0.3); width: 275px;">
+             <span>
+             <i class = "fa fa-arrow-circle-o-down fa-2x" style = "display:inline; padding-right: 8px; margin-top: 5px;"></i>
+             <p style = "display:inline; text-align: center; font-size: 20px;">QSC 2018 Program</p>
+             </span>
+           </button>
+           </form>
+           </div>
+         <!--End Download Button-->
+
+       </div>
+  </section>
+
+  <section id = "delegates" style = "padding-bottom: 30px; overflow: hidden;">
+    <div class = "container-fluid" style = "padding: 0; padding-bottom: 20px;">
+        <div class="col-lg-12 text-center" style = "padding-top: 10px;">
+            <h1>Delegates</h1>
+        </div>
+
+        <div class = "col-sm-12">
+          <div class = "desc  text-center"><p><i>
+          Get Ready For An Unforgettable Weekend!
+          <br>
+          <span style = "">&nbsp; January 26th - 28th, 2018 &nbsp;</span>
+          </i></p>
+          </div>
+        </div>
+
+        <div class = "container-fluid">
+          <div class = "row">
+            <div class = "paragraph">
+              <div class = "col-sm-12 col-md-4">
+              <i id = "dele_icon" class = "fa fa-rocket fa-4x text-center"></i>
+              <h3 class = "text-center">Discover</h3>
+                <p style = "color:white;">
+                  With talks from engaging speakers in varying fields and a case competition centred around a relevant problem, discover new perspectives and insights into space and all of its opportunities. Learn about what the next big steps are and how they will revolutionize the industry.
+                </p>
+              </div>
+
+              <div class = "col-sm-12 col-md-4">
+              <i id = "dele_icon" class = "fa fa-space-shuttle fa-4x text-center"></i>
+                <h3 class = "text-center">Connect</h3>
+                  <p style = "color:white; ">
+                 Our conference brings in students from various universities across Canada, providing the opportunity to develop a network with like minded individuals. Speakers and
+                  for the conference are industry leaders, providing cutting edge information on everything space.
+                  </p>
+              </div>
+
+              <div class = "col-sm-12 col-md-4">
+              <i id = "dele_icon" class = "fa fa-cogs fa-4x"></i>
+                <h3 class = "text-center">Interact</h3>
+                  <p style = "color:white;">
+                 People in this industry are some of the most passionate around. The Queen's Space Conference goes beyond just providing content by creating an unrivaled experience. Events outside of the speaker talks allow for delegates to interact in a more casual setting and share their excitement for what is yet to come.
+                  </p>
+              </div>
+
+            </div> <!--End Paragraph-->
+          </div><!--End Row-->
+        </div><!--End Container-fluid-->
+
+        <!-- TICKETS -->
+        <div class="col-lg-12 text-center" id = "tickets">
+          <h1>Tickets</h1>
+        </div>
+
+        <div class = "col-sm-12">
+          <div class = "desc  text-center" style = " margin-bottom: -10px;"><p><i>
+          Unearth the mysteries of space exploration with QSC
+          </i></p>
+          </div>
+        </div>
+
+        <div class = "col-sm-12">
+          <div class = "desc  text-center" style = "margin-bottom: -10px;"><p style = "font-size: 18px;"><i>
+          2018 Applications Closed.
+          </i></p>
+          </div>
+        </div>
+
+        <div class = "container-fluid tickets">
+          <div class = "row">
+              <!-- Day Pass -->
+            <div class = "col-xs-12 col-sm-6">
+                 <h3 class = "text-center" style = "background-color: white; padding: 10px 10px 10px 10px; color:black; margin-bottom: 0px;border-top-left-radius: 10px; border-top-right-radius: 10px;">Saturday Day Pass &nbsp;&nbsp;&nbsp; $90</h3>
+                 <div class = "ticket-drop" style = "background:rgba(255,255,255,0.7) ; margin-top:0px; padding-top: 0px; font-size:20px; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;
+                 padding:10px 0px 10px 0px;">
+                   <div class = "container-fluid">
+                     <ul style = "color:black;">
+                       <li>Just want a taste of QSC?</li>
+                       <li>Talks by Professionals in the Space Industry, including the Keynote Speaker</li>
+                       <li>A Case Competition & network opportunities</li>
+                       <li>Lunch and a Banquet Dinner on Saturday</li>
+                       <li><b>Exclusively available to First Year Queen's students</b></li>
+                     </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- RMC Pass -->
+              <div class = "col-xs-12 col-sm-6">
+                 <h3 class = "text-center ticket-rmc-head" style = "background-color: white; padding: 10px 10px 10px 10px; color:black; margin-bottom: 0px;border-top-left-radius: 10px; border-top-right-radius: 10px;">RMC Weekend Pass &nbsp;&nbsp;&nbsp; $125</h3>
+                 <div class = "ticket-drop ticket-rmc" style = "background:rgba(255,255,255,0.7); margin-top:0px; padding-top: 0px; font-size:20px; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;
+                 padding:10px 0px 10px 0px;">
+                   <div class = "container-fluid">
+                     <ul style = "color:black;">
+                       <li>Talks by professionals in the space industry</li>
+                       <li>A case competition</li>
+                       <li>A banquet on Saturday night</li>
+                       <li>Meals throughout the weekend</li>
+                       <li>Hotel stay <b>not</b> included</li>
+                       <li><b>Exclusively available to RMC students</b></li>
+                     </ul>
+                  </div>
+                </div>
+              </div>
+          </div><!-- End Row -->
+          <div class = "row">
+            <div class = "col-xs-12 col-sm-6">
+              <h3 class = "text-center ticket-regular-head" style = "padding: 10px 10px 10px 10px; color:black;margin-bottom: 0px; border-top-left-radius: 10px; border-top-right-radius: 10px;">Regular Ticket &nbsp;&nbsp;&nbsp; $155</h3>
+              <div class = "ticket-drop ticket-regular" style = "background:rgba(255,255,255,0.7); margin-top:0px; padding-top: 0px; font-size:20px;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px; padding:10px 0px 10px 0px;">
+                  <div class = "container-fluid">
+                     <ul style = "color:black;">
+                       <li>Talks by professionals in the space industry</li>
+                       <li>A two night Stay at the Four Points Hotel</li>
+                       <li>A case competition</li>
+                       <li>A banquet on Saturday night</li>
+                       <li>Meals throughout the weekend</li>
+                     </ul>
+                 </div>
+               </div>
+            </div>
+
+            <div class = "col-xs-12 col-sm-6">
+               <h3 class = "text-center ticket-platinum-head" style = "padding: 10px 10px 10px 10px; color:black; margin-bottom: 0px;border-top-left-radius: 10px; border-top-right-radius: 10px;">Platinum Ticket &nbsp;&nbsp;&nbsp; $180</h3>
+               <div class = "ticket-drop" style = "background:rgba(218,165,32,0.8); margin-top:0px; padding-top: 0px; font-size:20px; border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;
+               padding:10px 0px 10px 0px;">
+                 <div class = "container-fluid">
+                     <ul style = "color:black;">
+                       <li>Talks by professionals in the space industry</li>
+                       <li>A two night stay at the Four Points Hotel</li>
+                       <li>A case competition</li>
+                       <li>A banquet on Saturday night</li>
+                       <li>Meals throughout the weekend</li>
+                       <li>Exclusive networking event with speakers and sponsors</li>
+                       <li>Priority seating for all talks</li>
+                     </ul>
+                  </div>
+              </div>
+            </div>
+          </div><!--End Row-->
+        </div> <!--End Container-->
+
+        <!-- Apply Text -->
+        <div class = "apply-wrapper text-center" style = "margin-top: 15px;">
+          <h3 id = "open-now">Applications Closed</h3>
+        </div>
+        <!--Download Button
+        <div class = "text-center" style = "padding-top: 10px; padding-bottom: 0px;">
+        <form method="get" action="resources/QSC-Schedule-2018.pdf">
+          <button class = "sched-down btn btn-primary" style = " border:none; -webkit-box-shadow: 2px 3px 5px rgba(4, 4, 4, 0.3);
+-moz-box-shadow:    2px 3px 0px rgba(4, 4, 4, 0.3); width: 275px;">
+            <span>
+            <i class = "fa fa-arrow-circle-o-down fa-2x" style = "display:inline; padding-right: 8px; margin-top: 5px;"></i>
+            <p style = "display:inline; text-align: center; font-size: 20px;">QSC 2018 Schedule</p>
+            </span>
+          </button>
+          </form>
+          </div>
+        End Download Button-->
+  <!-- End Delegates -->
+  </section>
+  <hr id = "target_flareg" class =  "style13g" style = "background-color: linen;">
+
+  <section id = "sponsorship">
+    <div class = "container-fluid">
+      <div class="services_title row">
+          <div class="col-lg-12 text-center">
+              <h1>Sponsors</h1>
+          </div>
+          <!-- Hype Paragraphs -->
+          <div class = "container-fluid">
+            <div class = "row">
+                <div class = "paragraph">
+
+                    <div class = "col-sm-12 col-md-4">
+                    <i id = "dele_icon" class = "fa fa-address-card-o fa-4x"></i>
+                    <h3 class = "text-center">Recruit</h3>
+                      <p>
+                        Throughout our application process, we ensure that every delegate at QSC is forward thinking and passionate about space, and what the future holds.  Our delegates - intelligent and open to new opportunities - will excel at companies like yours.
+                      </p>
+                    </div>
+
+                    <div class = "col-sm-12 col-md-4">
+                    <i id = "dele_icon" class = "fa fa-handshake-o fa-4x"></i>
+                      <h3 class = "text-center">Network</h3>
+                        <p>
+                       Each year at QSC we host a Platinum networking event that brings together all speakers, sponsors, and VIP delegates. Everyone in the room will have something to offer, enabling company reps to network with the brightest and most passionate Ontario undergraduate students.
+                        </p>
+                    </div>
+
+                    <div class = "col-sm-12 col-md-4">
+                    <i id = "dele_icon" class = "fa fa-university fa-4x"></i>
+                      <h3 class = "text-center">Gain Exposure</h3>
+                        <p>
+                      Your company can be featured in QSC's newsletters - reaching all faculties at Queen's, as well as groups from other universities across Ontario. With us, you will have the opportunity to network and share with delegates, to build brand recognition, and to make a lasting impact at Queen's and beyond.
+                        </p>
+                    </div>
+              </div> <!--End Paragraph -->
+            </div><!--End Row-->
+          </div><!--End Container-fluid-->
+
+          <!-- Sponsor Images -->
+          <div class="col-lg-12 text-center">
+              <h2 style = "font-size: 25px; margin-bottom: 20px;">Partners</h2>
+          </div>
+
+          <div class = "container-fluid" style = "overflow:hidden;">
+            <div class = "row" style = "margin-top: 40px; margin-bottom: 15px;">
+              <!--Current Sponsor MDA-->
+              <a href = "https://mdacorporation.com/">
+                <div class = "col-xs-12 col-sm-6 frameY hvr-grow"><img class = "img-responsive vertical-center" src = "img/sponsors/MDA.png" style = "width: 400px;">
+                </div>
+              </a>
+              <!--Current Sponsor Burloak-->
+              <a href = "http://burloaktech.com/">
+                <div class = "col-xs-12 col-sm-6 frameY hvr-grow"><img class = "img-responsive vertical-center" src = "img/sponsors/burloak.png" style = "width: 400px;">
+                </div>
+              </a>
+              <!--Current Sponsor Hatch-->
+              <a href = "http://hatch.com/"><div class = "col-sm-6 col-xs-12 frameY hvr-grow">
+              <img class = "img-responsive vertical-center" src = "img/sponsors/hatch.png" style = "width:200px;">
+              </div></a>
+              <!--Current Sponsor Neptec-->
+              <a href = "http://neptec.com/"><div class = "col-sm-6 col-xs-12 frameY hvr-grow">
+              <img class = "img-responsive vertical-center" src = "img/sponsors/neptec_logo.png" style = "width:200px;">
+              </div></a>
+              <!--Current Sponsor Bread and Butter-->
+              <a href = "http://www.breadandbutter.ca/">
+                <div class = "col-xs-12 frameY hvr-grow"><img class = "img-responsive vertical-center" src = "img/sponsors/breadandbutter.png" style = "width: 150px;">
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-12 text-center">
+              <h2 style = "font-size: 25px; margin-bottom: 0px;">Past Partners</h2>
+          </div>
+
+          <div class = "container-fluid">
+            <div class = "row" style = "margin-top: 22px; margin-bottom: 15px;">
+
+                <a href = "http://gomccoy.com/"><div class = "col-xs-6 col-md-4 frameX hvr-grow">
+                <img class = "img-responsive vertical-center pastSponsor" src = "img/sponsors/mccoy.png" style = "width:140px;">
+                </div></a>
+
+                <a href = "http://www.transformix.com/"><div class = "col-xs-6 col-md-4 frameX hvr-grow">
+                <img class = "img-responsive vertical-center" src = "img/sponsors/transformix2.png" style = "width:140px;">
+                </div></a>
+
+                <a href = "http://cpsx.uwo.ca/"><div class = "col-xs-6 col-md-4 frameX hvr-grow">
+                <img class = "img-responsive vertical-center" src = "img/sponsors/cpsx.png" style = "width:140px;">
+                </div></a>
+
+                <a href = "http://www.queensu.ca/"><div class = "col-xs-6 col-md-4 frameX hvr-grow">
+                <img class = "img-responsive vertical-center" src = "img/sponsors/queens_logo.png" style = "width:140px;">
+                </div></a>
+
+                <a href = "http://smokespoutinerie.com/"><div class = "col-xs-6 col-md-4 frameX hvr-grow">
+                <img class = "img-responsive vertical-center" src = "img/sponsors/smokes_logo.png" style = "width:140px;">
+                </div></a>
+
+                <a href = "https://pitapit.ca/"><div class = "col-xs-6 col-md-4 frameX hvr-grow">
+                <img class = "img-responsive vertical-center" src = "img/sponsors/pita_logo.png" style = "width:140px;">
+                </div></a>
+            </div>
+          </div> -->
+        </div> <!-- End services_title Row -->
+       <!--End Hype-->
+
+        <div class = "text-center">
+          <form method="get" action="resources/QSC_Sponsors.pdf">
+            <button class = "spons-down btn btn-primary" style = "margin-bottom:20px; border:none; -webkit-box-shadow: 2px 3px 5px rgba(4, 4, 4, 0.3); -moz-box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3); width:275px;">
+              <span>
+                <i class = "fa fa-arrow-circle-o-down fa-2x" style = "display:inline; padding-right: 8px; margin-top: 5px;"></i>
+                <p style = "display:inline; text-align: center; font-size: 20px;">Sponsorship Package</p>
+              </span>
+            </button>
+          </form>
+        </div>
+    </div> <!-- End Container -->
+  </section> <!-- End Sponsors -->
+
+  <section id = "speakers">
+  <div class = "container-fluid">
+    <div class="contact_title row" style = "padding-top: 10px;">
+              <div class="col-lg-12 text-center">
+                  <h1>2018 Speakers</h1>
+                  <hr class="star-primary">
+              </div>
+    </div>
+    <!-- 2018 Speakers -->
+    <div class = "row container-fluid" style = "margin-bottom: 20px;">
+    <div class = "col-lg-2 col-xs-0"></div>
+    <!-- Dave Williams -->
+    <div class = "col-lg-8 col-sm-12 current_speaker">
+      <div class = "img-wrap  text-center">
+        <img src = "img/speakers/dave_williams.jpg" class = "speaker_image">
+      </div>
+      <div class = "speaker_name text-center"><h3>Dave Williams</h3></div>
+      <div class = "speaker_title text-center"><h4>Astronaut, Physician, Public Speaker</h4></div>
+      <div class = "speaker_association text-center"><h4>NASA / CSA / Exploration Inc.</h4></div>
+      <div class = "speaker_bio">
+        "Dafydd Rhys "Dave" Williams OC is a Canadian physician, public speaker and a retired CSA astronaut. Williams was a mission specialist on two space shuttle missions. His first spaceflight, STS-90 in 1998, was a 16-day mission aboard Space Shuttle Columbia dedicated to neuroscience research. His second flight, STS-118 in August 2007, was flown by Space Shuttle Endeavour to the International Space Station. During that mission he performed three spacewalks, becoming the third Canadian to perform a spacewalk and setting a Canadian record for total number of spacewalks. These spacewalks combined for a total duration of 17 hours and 47 minutes.  In 1998, Williams became the first non-American to hold a senior management position within NASA, when he held the position of Director of the Space and Life Sciences Directorate at the Johnson Space Center."
+      </div>
+    </div><!-- End Dave Williams -->
+    <div class = "col-lg-2 col-xs-0"></div>
+    <!-- Ewan Reid -->
+    <div class = "col-xs-12 col-md-6 current_speaker">
+      <div class = "img-wrap  text-center">
+        <img src = "img/speakers/ewan_reid.jpg" class = "speaker_image">
+      </div>
+      <div class = "speaker_name text-center"><h3>Ewan Reid</h3></div>
+      <div class = "speaker_title text-center"><h4>President and CEO</h4></div>
+      <div class = "speaker_association text-center"><h4>Mission Control Space Services Inc.</h4></div>
+      <div class = "speaker_bio">
+        "Ewan Reid is President and CEO of Mission Control Space Services Inc. founded in 2015 to pursue opportunities in the space/robotics sector.  Prior to founding Mission Control he held several positions at Neptec Design Group including Rover Power and Electrical Lead.  During his tenure in this role he was a lead designer on three rover prototypes for the Canadian Space Agency and supported a NASA/CSA lunar mission simulation on the slopes of Mauna Kea, Hawaii, manning the ROVER support console answering directly to the mission’s Flight Director.  Previously he was a systems and electrical designer and operations engineer for Neptec’s Laser Camera System.  In this capacity he was a mission controller for nine of the last 12 Space Shuttle missions at Mission Control at NASA JSC.  He also conducted numerous testing and verification activities at NASA KSC.  Ewan has degrees in Electrical Engineering and Economics from Queen’s University and is currently wrapping up a Master’s degree in Technology Innovation Management at Carleton University."
+      </div>
+    </div><!-- End Ewan Reid -->
+    <!-- Chis Damaren -->
+    <div class = "col-xs-12 col-md-6 current_speaker">
+      <div class = "img-wrap  text-center">
+        <img src = "img/speakers/chris_damaren.jpg" class = "speaker_image">
+      </div>
+      <div class = "speaker_name text-center"><h3>Dr. Chris Damaren</h3></div>
+      <div class = "speaker_title text-center"><h4>Ph.D, P.Eng., Professor and Director</h4></div>
+      <div class = "speaker_association text-center"><h4>U of T Institute for Aerospace Studies</h4></div>
+      <div class = "speaker_bio">
+        "Christopher J. Damaren is a Professor at the University of Toronto Institute for Aerospace Studies (UTIAS) and currently serves as its Director. He received a BASc in Engineering Science (Aerospace Option) from the University of Toronto in 1985. He went on to receive both MASc and PhD degrees in 1987 and 1990, respectively, both in aerospace engineering from UTIAS. From 1990 to 1995 he was an Assistant Professor in the Department of Engineering at Royal Roads Military College in Victoria, British Columbia, Canada. From 1995 to 1999 he was a Senior Lecturer in the Department of Mechanical Engineering at the University of Canterbury in Christchurch, New Zealand. Since 1999 he has been at UTIAS. From 2008 to 2013, he served as the Vice-Dean Graduate Studies for the Faculty of Applied Science and Engineering. His research interests are in the areas of dynamics and
+        control of space systems.  He has made significant contributions to the control problems for structurally flexible robotic manipulators, flexible spacecraft, and spacecraft attitude control. He is a Fellow of the Canadian Aeronautics and Space Institute and an Associate Fellow of the American Institute of Aeronautics and Astronautics."
+      </div>
+    </div><!-- End Chis Damaren -->
+  </div><!-- End Speakrs row 1 -->
+  <div class = "row">
+    <!-- Ed Birchnall -->
+    <div class = "col-xs-12 col-md-4 current_speaker">
+      <div class = "img-wrap  text-center">
+        <img src = "img/speakers/ed_birchnall.jpg" class = "speaker_image">
+      </div>
+      <div class = "speaker_name text-center"><h3>Ed Birchnall</h3></div>
+      <div class = "speaker_title text-center"><h4>Robotics Training Lead/Mission Controller</h4></div>
+      <div class = "speaker_association text-center"><h4>Canadian Space Agency</h4></div>
+      <div class = "speaker_bio">
+        "Mr. Birchnall graduated from our very own Queen's University in 1999 with a degree in Engineering Physics. Currently, he works for the Canadian Space Agency as the Robotics Training Lead and ISS Robotics Flight Controller. Mr. Birchnall is responsible for the planning and execution of real-time operations involving Canadarm2, a 17-metre long robotic arm that is routinely used to move supplies, equipment, and even astronauts in space."
+      </div>
+    </div><!-- End Alex Ahern -->
+    <!-- Alex Ahern -->
+    <div class = "col-xs-12 col-md-4 current_speaker">
+      <div class = "img-wrap  text-center">
+        <img src = "img/speakers/alex_ahern.jpg" class = "speaker_image">
+      </div>
+      <div class = "speaker_name text-center"><h3>Alex Ahern</h3></div>
+      <div class = "speaker_title text-center"><h4>PhD Candidate - Planetary Geology</h4></div>
+      <div class = "speaker_association text-center"><h4>Stony Brook University</h4></div>
+      <div class = "speaker_bio">
+        "Alexandra Ahern is a graduate student at Stony Brook University in the Department of Geosciences under Dr. A. Deanne Rogers, where she studies the thermophysical responses of surface materials on Mars as part of the Mars Odyssey THEMIS team. She completed her B.S. and M.S. in Geology at Brigham Young University, where she studied tectonic and volcanic processes on Jupiter's moon Io with Dr. Jani Radebaugh. While also at BYU, she worked as a researcher, preparator, and educator at the BYU Museum of Paleontology. Alex has also worked on various projects for energy companies and in science outreach with children of all ages. In her free time, she enjoys playing the piano and a variety of traditional Irish instruments with local Irish music enthusiasts. Alex is also an avid southern Utah explorer, a diehard sports fan, and a crossword puzzle enthusiast. "
+      </div>
+    </div><!-- End Alex Ahern -->
+    <!-- Bayar Goswami -->
+    <div class = "col-xs-12 col-md-4 current_speaker">
+      <div class = "img-wrap  text-center">
+        <img src = "img/speakers/bayar_goswami.jpg" class = "speaker_image">
+      </div>
+      <div class = "speaker_name text-center"><h3>Bayar Goswami</h3></div>
+      <div class = "speaker_title text-center"><h4>Doctoral student</h4></div>
+      <div class = "speaker_association text-center"><h4>Institute of Air and Space Law, McGill University</h4></div>
+      <div class = "speaker_bio">
+        "Mr. Goswami is a Doctoral student at the Institute of Air and Space Law at McGill University. After receiving his law degree from the Institute of Law at Nirma University in India in 2015, he went on to pursue LL.M. in Air and Space Law from IASL where he wrote a thesis titled "Theorizing Cosmic Environmental Law" dealing with cosmology and studying the Anthropocene epoch vis-á-vis the International Environmental and Space law.
+        Mr. Goswami is passionate about triggering dialogues which challenge the developmental paradigm, particularly at the onset of modern space age. Welcome, Mr. Goswami!"
+      </div>
+    </div><!-- End Bayar Goswami -->
+  </div><!-- End 2018 Speakers Row -->
+  <div class = "row">
+    <!-- Alan Thompson -->
+    <div class = "col-xs-12 col-md-4 current_speaker">
+      <div class = "img-wrap  text-center">
+        <img src = "img/speakers/alan_thompson.jpg" class = "speaker_image">
+      </div>
+      <div class = "speaker_name text-center"><h3>Dr. Alan Thompson</h3></div>
+      <div class = "speaker_title text-center"><h4>Chief Systems Engineer</h4></div>
+      <div class = "speaker_association text-center"><h4>RADARSAT Constellation Mission</h4></div>
+      <div class = "speaker_bio">
+        "Alan Thompson is the Chief Systems Engineer on the RADARSAT Constellation Mission (RCM) at MDA. RCM is a constellation of three Synthetic Aperture Radar (SAR) satellites being developed by MDA for the Canadian Space Agency. Alan has worked on RCM since its very beginning as a study in 2003 until the present, where the program is nearly ready for launch. Alan joined MDA in 1999 to work on RADARSAT-2 as a senior systems engineer. Prior to working at MDA, Alan worked on RADARSAT-1 SAR processing at Array Systems in Toronto. Alan has a Ph.D. in mathematics from MIT (in the field of integral geometry) and also a B.Sc. (Hon) in mathematics and computer Science from Queen’s university. While his Ph.D. was in pure mathematics, the radar imaging systems he currently works on are applications of the types of mathematics he used to study and develop."
+      </div>
+    </div><!-- End Alan Thompson -->
+    <!-- Andre Dupuis -->
+    <div class = "col-xs-12 col-md-4 current_speaker">
+      <div class = "img-wrap  text-center">
+        <img src = "img/speakers/andre_dupuis.jpg" class = "speaker_image">
+      </div>
+      <div class = "speaker_name text-center"><h3>Andre Dupuis</h3></div>
+      <div class = "speaker_title text-center"><h4>Col (Ret) Canadian Armed Forces</h4></div>
+      <div class = "speaker_association text-center"><h4>Director of Space Requirements</h4></div>
+      <div class = "speaker_bio">
+        "Col (Ret) Andre Dupuis retired from the Canadian Armed Forces as the Director of Space requirements. In that capacity he was responsible for the requirements definition, space mission design and acquisition oversight of the Department of National Defence's national security space programme, to include Surveillance of Space, Space-based Intelligence, Surveillance and Reconnaissance. Satellite Communications, Navigation Warfare and Research and Development.  Currently, Mr. Dupuis is the President and CEO of Space Strategies Consulting Ltd, a company that provides advice, mission concept development and mission planning across a broad spectrum of space programmes. Mission expertise includes earth observation missions, especially space-based maritime domain awareness, space surveillance and SATCOM."
+      </div>
+    </div><!-- End Andre Dupuis -->
+    <!-- Dr. Marianne Mader -->
+    <div class = "col-xs-12 col-md-4 current_speaker">
+      <div class = "img-wrap  text-center">
+        <img src = "img/speakers/marianne_mader.jpg" class = "speaker_image">
+      </div>
+      <div class = "speaker_name text-center"><h3>Dr. Marianne Mader</h3></div>
+      <div class = "speaker_title text-center"><h4>ROM Managing Director</h4></div>
+      <div class = "speaker_association text-center"><h4>Centres for Earth & Space/ Fossils & Evolution</h4></div>
+      <div class = "speaker_bio">
+        "She’s dedicated her career to sharing her love for science and space exploration through innovative public engagement, participatory education, and planetary science research. Currently, the Managing Director of Earth & Space/Fossils & Evolution at the Royal Ontario Museum (ROM), Marianne leads multidisciplinary initiatives to help people understand the Earth, our solar system and how life evolved over time. As part of her mission to make education accessible and engaging, Marianne co-founded STEAMLabs, a non-profit community makerspace, where people of different ages and abilities come together to learn and create using digital fabrication, coding, and more. With over 13 years of research & field experience, Dr. Mader has studied some of the oldest rocks on Earth in Greenland, explored impact craters across the globe, and collected meteorites in Antarctica. She’s worked with the Canadian Space Agency, NASA, and numerous Canadian space companies. She’s Visiting Lecturer at the International Space University, and her education includes a PhD in Planetary Science, MSc in Space Studies, and an MSc in Earth Sciences."
+      </div>
+    </div><!-- End Dr. Marianne Mader -->
+  </div><!-- End 2018 Speakers Row -->
+
+    <!--Past Speakers -->
+    <div class="contact_title row" style = "padding-top: 10px;">
+        <div class="col-lg-12 text-center">
+            <h1>Past Speakers</h1>
+        </div>
+    </div>
+      <!--Past Speakers Summary-->
+      <div class = "row">
+        <!--Speaker-->
+        <div class = "col-md-3 col-xs-6 speaker">
+          <div class = "text-center" >
+            <h3><span><a href = "https://en.wikipedia.org/wiki/Robert_Thirsk"><i class = "fa fa-info-circle"></i></a></span> Dr. Robert Thirsk</h3>
+            <p>Former Astronaut, Canadian Space Agency</p>
+          </div>
+        </div>
+        <!--End Speaker-->
+        <!--Speaker-->
+        <div class = "col-md-3 col-xs-6 speaker">
+          <div class = "text-center" >
+            <h3><span><a href = "https://en.wikipedia.org/wiki/Jeffrey_P._Sutton"><i class = "fa fa-info-circle"></i></a></span> Dr. Jeffrey Sutton</h3>
+            <p>President &amp; CEO, National Space Biomedical Research Institute</p>
+          </div>
+        </div>
+        <!--End Speaker-->
+         <!--Speaker-->
+        <div class = "col-md-3 col-xs-6 speaker">
+          <div class = "text-center">
+            <h3><span><a href = "https://seds.ca/people-list/2017/2/8/ryan-anderson"><i class = "fa fa-info-circle"></i></a></span> Ryan Anderson</h3>
+            <p>Director of Satellite Systems, QShift Inc.</p>
+          </div>
+        </div>
+        <!--End Speaker-->
+         <!--Speaker-->
+        <div class = "col-md-3 col-xs-6 speaker">
+          <div class = "text-center" >
+            <h3><span><a href = "http://www.aerospacewriter.ca/"><i class = "fa fa-info-circle"></i></a></span> Eric Choi </h3>
+            <p>Aerospace Engineer &amp; Science Fiction Author</p>
+          </div>
+        </div>
+        <!--End Speaker-->
+        <!--Speaker-->
+        <div class = "col-md-3 col-xs-6 speaker">
+          <div class = "text-center" >
+            <h3><span><a href = "https://www.researchgate.net/profile/Jeffrey_Lee7"><i class = "fa fa-info-circle"></i></a></span> Jeff Lee</h3>
+            <p>Professor, Center for Astrophysics, Space Science, and Engineering Research</p>
+          </div>
+        </div>
+        <!--End Speaker-->
+        <!--Speaker-->
+        <div class = "col-md-3 col-xs-6 speaker">
+          <div class = "text-center" >
+            <h3><span><a href = "http://www.planetary.org/connect/our-experts/profiles/kate-howells.html"><i class = "fa fa-info-circle"></i></a></span> Kate Howells</h3>
+            <p>Global Community Outreach Manager, The Planetary Society</p>
+          </div>
+        </div>
+        <!--End Speaker-->
+        <!--Speaker-->
+        <div class = "col-md-3 col-xs-6 speaker">
+          <div class = "text-center" >
+            <h3><span><a href = "http://missioncontrolspaceservices.com/ewan-reid/"><i class = "fa fa-info-circle"></i></a></span> Ewan Reid</h3>
+            <p>President &amp; CEO, Mission Control Space Services Inc.</p>
+          </div>
+        </div>
+        <!--End Speaker-->
+        <!--Speaker-->
+        <div class = "col-md-3 col-xs-6 speaker">
+          <div class = "text-center" >
+            <h3><span><a href = "https://www.nasa.gov/mission_pages/station/research/experiments/1931.html"><i class = "fa fa-info-circle"></i></a></span> Dr. Odette Laneuville</h3>
+            <p>Co-Investigator, MARROW Study aboard the ISS</p>
+          </div>
+        </div>
+        <!--End Speaker-->
+        <!--Speaker-->
+
+        <!--End Speaker-->
+      </div><!--End row-->
+      <!--End Speakers Summary-->
+      <!--Download Button-->
+      <div class = "text-center" style = "padding-top: 20px; padding-bottom: 5px;">
+        <form method="get" action="resources/Speakers2018_Optimized.pdf">
+          <button class = "spons-down btn btn-primary" style = " border:none; -webkit-box-shadow: 2px 3px 5px rgba(4, 4, 4, 0.3); -moz-box-shadow:    2px 3px 0px rgba(4, 4, 4, 0.3); width: 275px;">
+            <span>
+              <i class = "fa fa-arrow-circle-o-down fa-2x" style = "display:inline; padding-right: 8px; margin-top: 5px;"></i>
+              <p style = "display:inline; text-align: center; font-size: 20px;">Speakers Package</p>
+            </span>
+          </button>
+        </form>
+      </div>
+        <!--End Download Button-->
+    </div> <!-- End Container -->
+  </section> <!-- End Speakers -->
+
+  <hr id = "target_flarer" class = "style13r" style = "background-color: linen;">
+
+  <section id = "team">
+    <div class = "container-fluid">
+        <div class="contact_title row">
+            <div class="col-lg-12 text-center">
+                <h1>Our Team</h1>
+            </div>
+        </div>
+
+        <div class = "exec col-xs-6 text-center">
+              <img src = "img/team/rachel.jpg">
+              <p>Rachel Steinhart <br> Co-Chair</p>
+              <div class = "links">
+              <a href = "mailto:r.steinhart@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
+              <a href = "https://www.linkedin.com/in/rachel-steinhart-9207a1131/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              </div>
+        </div>
+
+        <div class = "exec col-xs-6 text-center">
+              <img src = "img/team/fiona.jpg">
+              <p>Fiona Burns <br> Co-Chair</p>
+              <div class = "links">
+              <a href = "mailto:f.burns@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
+              <a href = "https://www.linkedin.com/in/fmburns/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              </div>
+        </div>
+
+        <div class = "col-xs-12 text-center">
+          <h2>Speakers</h2>
+        </div>
+
+        <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center" >
+              <img src = "img/team/colin.jpg">
+              <p>Colin MacLeod <br> Speakers Director</p>
+              <div class = "links">
+              <a href = "mailto:c.macleod@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
+              <a href = "https://www.linkedin.com/in/colinlmacleod1/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              </div>
+        </div>
+
+        <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
+              <img src = "img/team/becca.jpg">
+              <p>Becca Bonham-Carter <br> Speakers Coordinator</p>
+              <div class = "links">
+              <a href = "mailto:r.bonham-carter@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
+              <a href = " https://www.linkedin.com/in/rebecca-bonham-carter-6977a3136/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              </div>
+        </div>
+
+         <div class = "exec col-xs-12 col-sm-4 col-md-4 text-center" >
+              <img src = "img/team/sam.jpg">
+              <p>Sam Roper <br> Speakers Coordinator</p>
+              <div class = "links">
+              <a href = "mailto:s.roper@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
+               <a href = "https://www.linkedin.com/in/sam-roper-a76016134/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              </div>
+        </div>
+
+        <div class = "col-xs-12 text-center">
+          <h2>Sponsorship</h2>
+        </div>
+        <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
+              <img src = "img/team/aaron.jpg">
+              <p>Aaron Rosenstein <br> Sponsorship Director</p>
+              <div class = "links">
+              <a href = "mailto:a.rosenstein@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
+              <a href = "https://www.linkedin.com/in/aaron-rosenstein-a20493110/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              </div>
+        </div>
+
+        <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
+              <img src = "img/team/mathew.jpg">
+              <p>Matthew Skarsgard <br> Sponsorship Coordinator</p>
+              <div class = "links">
+              <a href = "mailto:m.skarsgard@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
+              <a href = "https://www.linkedin.com/in/mtskarsgard/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              </div>
+        </div>
+
+        <div class = "exec col-xs-12 col-sm-4 col-md-4 text-center">
+              <img src = "img/team/jack.jpg">
+              <p>Jack Ellis <br> Sponsorship Coordinator</p>
+              <div class = "links">
+              <a href = "mailto:j.ellis@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
+              <a href = "https://www.linkedin.com/in/jack-ellis-5a3018134/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              </div>
+        </div>
+
+        <div class = "col-xs-12 text-center">
+          <h2>Marketing &amp; Media</h2>
+        </div>
+
+         <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
+                <img src = "img/team/doug.jpg">
+                <p>Douglas Gowing <br> Publications &amp; Media Coordinator</p>
+                <div class = "links">
+                <a href = "mailto:d.gowing@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:0px;"></i></a>
+                </div>
+          </div>
+
+          <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
+                <img src = "img/team/cory.jpg">
+                <p>Cory Crowley <br> IT Coordinator &amp; Webmaster</p>
+                <div class = "links">
+                <a href = "mailto:c.crowley@qsconference.com"><i class = "fa fa-envelope fa-2x" style = "margin-top:-10px;"></i></a>
+                <a href = "https://www.linkedin.com/in/crowleycoryz/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+                </div>
+
+          </div>
+
+           <div class = "exec col-xs-12 col-sm-4 col-md-4 text-center">
+                <img src = "img/team/mark.jpg">
+                <p>Mark Besse<br> Marketing Coordinator</p>
+                <div class = "links">
+                <a href = "mailto:m.besse@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a>
+              </div>
+          </div>
+
+          <div class = "col-xs-12 text-center">
+            <h2>Operations</h2>
+          </div>
+
+          <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
+                <img src = "img/team/duncan.jpg">
+                <p>Duncan Cameron-Steinke <br> Logistics Coordinator</p>
+                <div class = "links">
+                <a href = "mailto:d.steinke@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a></div>
+          </div>
+
+          <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
+                <img src = "img/team/ted.jpg">
+                <p>Ted Ecclestone<br> Finance Coordinator</p>
+                <div class = "links">
+                <a href = "mailto:t.ecclestone@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a>
+              </div>
+          </div>
+
+          <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
+                <img src = "img/team/isabelle.jpg">
+                <p>Isabelle Sanders<br> Events Coordinator</p>
+                <div class = "links">
+                <a href = "mailto:i.sanders@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a>
+                 <a href = "https://www.linkedin.com/in/isabelle-sanders-891635124/" style = "padding-left: 10px;"><i class = "fa fa-linkedin fa-2x"></i></a>
+              </div>
+          </div>
+
+          <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
+                <img src = "img/team/julia.jpg">
+                <p>Julia Kerr<br> Internal Delegates Coordinator</p>
+              <div class = "links">
+                <a href = "mailto:j.kerr@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a>
+              </div>
+          </div>
+
+          <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
+                <img src = "img/team/laura.jpg">
+                <p>Laura Motahedin<br> External Delegates Coordinator</p>
+              <div class = "links">
+                <a href = "mailto:l.motahedin@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a>
+              </div>
+          </div>
+
+           <div class = "exec col-xs-6 col-sm-4 col-md-4 text-center">
+                <img src = "img/team/adam.jpg">
+                <p>Adam Pukier <br> First Year Representative</p>
+                <div class = "links">
+                <a href = "mailto:a.pukier@qsconference.com"><i class = "fa fa-envelope fa-2x" style = ""></i></a>
+              </div>
+          </div>
+      </div> <!-- End Container -->
+  </section> <!-- End Team Section -->
+
+  <!-- Map -->
+  <div id = "map" class = "map-container" style = "margin-bottom: -20px; padding-bottom: 0px; background-image: url('img/spacebg.jpg');">
+    <section id="contact" class="map">
+        <iframe width="100%" height="40%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDt-2V1-v01m_NykXoY-3vfRQ1wc1yPWgM&q=Four+Points+Sheraton,Kingston+Ontario&zoom=16"></iframe>
+        <br />
+        <small>
+            <a href="https://www.google.com/maps/embed/v1/place?key=AIzaSyDt-2V1-v01m_NykXoY-3vfRQ1wc1yPWgM&q=Four+Points+Sheraton,Kingston+Ontario&zoom=17"></a>
+        </small>
+    </section>
+  </div>
+
+    <!-- Footer -->
+    <footer id = "footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h3><strong>Queen's Space Conference 2018</strong>
+                    </h3>
+                    <p>Four Points by Sheraton Kingston <br>285 King St E
+                        <br>Kingston, ON Canada</p>
+
+                    <br>
+                    <p class="social">
+        <a href="https://www.facebook.com/QSConference/" title="" class="fs facebook"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/qsconference?lang=en" title="" class="fs twitter"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://www.instagram.com/queensspace/" title="" class="fs instagram"><i class="fa fa-instagram fa-2x"></i></a></p>
+        <!--Download Button-->
+                    <div class = "text-center" style = "padding-top: 10px; padding-bottom: 0px;">
+                    <form method="get" action="resources/QSC-Schedule.pdf">
+                      <button class = "sched-down btn btn-primary" style = " border:none; -webkit-box-shadow: 2px 3px 5px rgba(4, 4, 4, 0.3);
+    -moz-box-shadow:    2px 3px 0px rgba(4, 4, 4, 0.3); width: 275px;">
+                        <span>
+                        <i class = "fa fa-arrow-circle-o-down fa-2x" style = "display:inline; padding-right: 8px; margin-top: 5px;"></i>
+                        <p style = "display:inline; text-align: center; font-size: 20px;">QSC 2017 Schedule</p>
+                        </span>
+                      </button>
+                      </form>
+                      </div>
+            <!--End Download Button-->
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; QSC 2018 - Website design : <a href = "https://cormaccrowley.com">Cory Crowley</a></p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#jumbo" class="XX btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+        <br><br>
+    </footer>
+
+<!-- jQuery -->
+<script src="resources/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="resources/bootstrap.min.js"></script>
+<!--Swiper JS-->
+<script src="resources/swiper.min.js"></script>
+<!--Custom JS-->
+<script src="js/custom.js"></script>
+
+<!-- JAVASCRIPT FILES -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="javascripts/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/front.js"></script>
+<!-- JQuery function for navbar-fixed-top and fix navigation top of page jump -->
+<script>
+$(document).ready(function() {
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the
+      var d = $('.jumbo-wrap');
+    if ($(window).scrollTop() > d.prop("scrollHeight") ) {
+
+      $('.navbar').addClass('navbar-fixed-top');
+      $('#linkList').addClass('fixed-links');
+      $('body').css('margin-top','53.8px');
+
+    }
+    if ($(window).scrollTop() < d.prop("scrollHeight")) {
+      $('.navbar').removeClass('navbar-fixed-top');
+      $('#linkList').removeClass('fixed-links');
+      $('body').css('margin-top','0px');
+    }
+  });
+});
+</script>
+<!--Smooth Scroll Script-->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to nav links
+  $(".XX").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 49
+      }, 800, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<!-- Google Maps Script-->
+<script>
+$('.bg').css('backgroundColor','#dedede');
+    $('.bg').fadeOut(5000);
+
+    $('.map-container')
+  .click(function(){
+      $(this).find('iframe').addClass('clicked')})
+  .mouseleave(function(){
+      $(this).find('iframe').removeClass('clicked')});
+    </script>
+</script>
+
+</body>
+</html>
